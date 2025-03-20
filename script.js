@@ -34,10 +34,10 @@ document.getElementById('prev-btn').addEventListener('click', () => {
   updateContent();
 });
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % phrases.length;
-  updateContent();
-}, 150000);
+// setInterval(() => {
+//   currentIndex = (currentIndex + 1) % phrases.length;
+//   updateContent();
+// }, 150000);
 
 updateContent();
 
