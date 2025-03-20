@@ -199,3 +199,96 @@ button:hover .svg-wrapper {
 button:hover svg {
   transform: rotate(45deg);
 }
+
+
+/* Ajustes generales para hacer la web responsive */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    width: 180px;
+    /* Tamaño más pequeño del logo */
+  }
+
+  #phrase {
+    font-size: 22px;
+    max-width: 80%;
+  }
+
+  #form-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 150px;
+  }
+
+  #phrase {
+    font-size: 20px;
+    max-width: 90%;
+  }
+
+  #form-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 120px;
+  }
+
+  #phrase {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  #form-container {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  #phrase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #phrase {
+    max-width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
