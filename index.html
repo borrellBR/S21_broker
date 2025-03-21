@@ -9,6 +9,13 @@
 </head>
 
 <body>
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="fondo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
   <div class="landing-page">
     <div class="logo">
       <img src="logo1.png" alt="S21 Barcelona Insurance Broker">
@@ -54,12 +61,11 @@
         </button>
       </form>
     </div>
-    <buttonn id="prev-btn" class="prev">&lt;</buttonn>
-    <buttonn id="next-btn" class="next">&gt;</buttonn>
+    <button id="prev-btn" class="prev">&lt;</button>
+    <button id="next-btn" class="next">&gt;</button>
   </div>
 
   <script src="script.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
     emailjs.init("VJippWk_KhtfTGXkH"); // Reemplaza con tu User ID de EmailJS
