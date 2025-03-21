@@ -31,20 +31,36 @@
       <br>
       <form id="contact-form">
         <div class="input-group">
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="text" name="apellidos" placeholder="Apellidos" required>
+          <input type="text" name="nombre" placeholder="NOMBRE" required>
         </div>
         <div class="input-group">
-          <input type="text" name="empresa" placeholder="Empresa" required>
-          <input type="text" name="facturacion" placeholder="Facturación" required>
+          <label>Tipo de Cliente:</label>
+          <select name="tipoCliente" id="tipoCliente" required>
+            <option value="particular">PARTICULAR</option>
+            <option value="empresa">EMPRESA</option>
+          </select>
+        </div>
+        <div id="empresa-fields" class="hidden">
+          <div class="input-group">
+            <input type="text" name="empresa" placeholder="NOMBRE EMPRESA">
+          </div>
+          <div class="input-group">
+            <label>Facturación Anual:</label>
+            <select name="facturacion">
+              <option value="5-20M">5-20M€</option>
+              <option value="20-200M">20-200M€</option>
+              <option value="200M-1B">200M-1B€</option>
+              <option value="+1B">+1B€</option>
+            </select>
+          </div>
         </div>
         <div class="input-group">
-          <input type="text" name="telefono" placeholder="Teléfono" required>
+          <input type="text" name="telefono" placeholder="TELÉFONO" required>
         </div>
         <div class="input-group">
-          <input type="email" name="correo" placeholder="Correo electrónico" required>
+          <input type="email" name="correo" placeholder="CORREO ELECTRÓNICO" required>
         </div>
-        <textarea name="comentario" placeholder="Comentario" required></textarea>
+        <textarea name="comentario" placeholder="¿QUÉ NECESITAS?" required></textarea>
 
         <button type="submit">
           <div class="svg-wrapper-1">
@@ -61,6 +77,7 @@
         </button>
       </form>
     </div>
+
     <button id="prev-btn" class="prev">&lt;</button>
     <button id="next-btn" class="next">&gt;</button>
   </div>
