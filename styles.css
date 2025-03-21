@@ -70,6 +70,8 @@ buttonn {
 .logo img {
   width: 100%;
   height: auto;
+  margin-top: -10vh;
+  margin-left: 2vh;
 }
 
 
@@ -204,7 +206,9 @@ button:hover svg {
 /* Ajustes generales para hacer la web responsive */
 @media screen and (max-width: 1024px) {
   .logo img {
-    width: 180px;
+    width: 200px;
+    margin-top: 2vh;
+
     /* Tamaño más pequeño del logo */
   }
 
@@ -221,7 +225,7 @@ button:hover svg {
 
 @media screen and (max-width: 768px) {
   .logo img {
-    width: 150px;
+    width: 200px;
   }
 
   #phrase {
@@ -246,7 +250,7 @@ button:hover svg {
 
 @media screen and (max-width: 480px) {
   .logo img {
-    width: 120px;
+    width: 200px;
   }
 
   #phrase {
